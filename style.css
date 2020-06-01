@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Bebas Neue', cursive;
+}
+
+p {
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.large-container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Showcase Section */
+.showcase {
+  background-image: url('./images/mountains.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  margin: 12rem auto 5rem;
+  width: 90%;
+  max-width: 800px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.top-title,
+.bottom-title {
+  font-size: 6rem;
+  line-height: 6.5rem;
+}
+
+.top-title {
+  color: #333;
+  margin-bottom: 0;
+}
+
+.bottom-title {
+  color: #3f4d6d;
+}
+
+.carousel-image {
+  margin: 0 auto;
+  max-width: 380px;
+}
+
+/* History Section */
+.history {
+  background-image: url('./images/history-mountains.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: #fff;
+  position: relative;
+}
+
+.history-content {
+  padding-top: 3rem;
+}
+
+.number {
+  font-size: 8rem;
+  color: #6c7d9c;
+  line-height: 5rem;
+}
+
+.section-title-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  color: #3e4b6c;
+  position: absolute;
+  bottom: 0.3rem;
+  left: 6.7rem;
+}
+
+.text {
+  color: #fff;
+}
+
+/* Climb Section */
+.climb {
+  min-height: 100vh;
+}
+
+.climb-content {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.climb-title-wrapper {
+  position: relative;
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.3rem;
+  color: #3e4b6c;
+  position: absolute;
+  bottom: 0.6rem;
+  left: 6.7rem;
+}
+
+.climb-text {
+  margin-left: 5rem;
+}
+
+.tabs {
+  margin-top: 2rem;
+}
+
+.list {
+  background-color: #3f4d6d;
+  padding: 0.2rem 0;
+  display: flex;
+  list-style: none;
+  margin: 0 auto;
+}
+
+.climb-tabs {
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-family: 'Bebas Neue', cursive;
+  color: #6c7d9c;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.climb-tabs:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.climb-bg {
+  background-image: url('./images/climb-mountains.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 73vh;
+  position: relative;
+}
+
+.schedule {
+  background-color: #fff;
+  opacity: 0.8;
+  max-width: 350px;
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
+
+.schedule-title {
+  font-size: 2.6rem;
+  color: #3e4b6c;
+}
+
+.schedule-details {
+  display: flex;
+}
+
+.schedule-list {
+  list-style: none;
+  margin: 0 3rem 0 0;
+}
+
+.schedule-list li {
+  margin-bottom: 1rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3f4d6d;
+  color: #5b6b97;
+  padding: 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.8rem;
+}
+
+/* Media Queries */
+@media (min-width: 990px) {
+  .main-title {
+    text-align: left;
+    margin-top: 9rem;
+    padding-left: 5rem;
+  }
+
+  .top-title,
+  .bottom-title {
+    font-size: 9rem;
+    line-height: 7rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .schedule {
+    top: 20%;
+    left: 10%;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .climb-content {
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .climb-text {
+    margin: 1rem 0 0;
+    text-align: center;
+  }
+}
